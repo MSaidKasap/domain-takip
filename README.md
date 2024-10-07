@@ -2,6 +2,13 @@
 
 Bu proje, domainlerin süresini takip eden ve son 10 güne yaklaştığında otomatik olarak SMS ve e-posta yoluyla bildirim gönderen bir sistemdir. Sistem, domain süresi dolmadan kullanıcıya uyarı göndererek, yenileme işlemlerinin zamanında yapılmasını sağlar.
 
+
+## Ekran Görüntüsü
+
+![Domain Takip Sistemi Ekran Görüntüsü](./screenshot/screenshot1.png)
+![Domain Takip Sistemi Ekran Görüntüsü](./screenshot/screenshot2.png)
+
+
 ## Özellikler
 
 - Domain süresini takip etme
