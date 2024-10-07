@@ -64,4 +64,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Hata: " . $e->getMessage();
     }
 }
-?>
+
