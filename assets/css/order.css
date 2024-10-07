@@ -1,0 +1,200 @@
+/* Genel ürün kartı stil düzenlemesi */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* Mobil cihazlar için medya sorguları */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .product-card img {
+        max-height: 120px;
+        object-fit: contain;
+    }
+}
+
+/* Daha küçük mobil cihazlar için (örneğin, 576px ve altı) */
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
+
+    .product-card {
+        padding: 8px;
+    }
+
+    .product-card img {
+        max-height: 100px;
+    }
+}
+
+/* Tabletler için medya sorguları (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .product-card {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .product-card img {
+        max-height: 140px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+}
+
+/* Standart büyük ekranlar için (1024px üzeri) */
+@media (min-width: 1024px) {
+    .col-md-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card img {
+        max-height: 150px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+}
+
+/* Navbar stil düzenlemesi */
+.navbar-dark-blue {
+    background-color: #006494 !important;
+}
+
+.navbar-dark-blue .nav-link {
+    color: #fff !important;
+}
+
+.navbar-dark-blue .btn-nav {
+    color: #fff;
+    background-color: #00487C;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.navbar-dark-blue .btn-nav:hover {
+    background-color: #003A66;
+}
+
+/* Sipariş tablosu stil düzenlemesi */
+.table-orders {
+    width: 100%;
+    text-align: left;
+}
+
+.table-orders th,
+.table-orders td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Kategori listesi stil düzenlemesi */
+.category-list {
+    border-right: 1px solid #dee2e6;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.category-list .list-group-item {
+    font-size: 0.9rem;
+}
+
+.category-list img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Sipariş özeti stil düzenlemesi */
+.order-summary {
+    border-left: 1px solid #dee2e6;
+    padding: 15px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.order-summary ul {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Diğer genel stil düzenlemeleri */
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.btn-primary,
+.btn-success {
+    width: 100%;
+}
